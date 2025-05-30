@@ -1,0 +1,1123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             tools:context=".ChessBoardFragment">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/horizontalLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:background="@color/chess2"
+                android:layout_height="wrap_content"
+                android:id="@+id/verticalLayoutA1">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/black_rook"
+                    android:background="@color/chess2"
+                    android:tag="black_rook"
+                    android:id="@+id/buttonA8"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/chess1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/verticalLayoutB1">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/black_knight"
+                    android:background="@color/chess1"
+                    android:tag="black_knight"
+                    android:id="@+id/buttonB8"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutC1">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/black_bishop"
+                    android:background="@color/chess2"
+                    android:tag="black_bishop"
+                    android:id="@+id/buttonC8"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess1"
+                android:id="@+id/verticalLayoutD1">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess1"
+                    android:src="@drawable/black_queen"
+                    android:tag="black_queen"
+                    android:id="@+id/buttonD8"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutE1">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess2"
+                    android:src="@drawable/black_king"
+                    android:tag="black_king"
+                    android:id="@+id/buttonE8"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess1"
+                android:id="@+id/verticalLayoutF1">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess1"
+                    android:src="@drawable/black_bishop"
+                    android:tag="black_bishop"
+                    android:id="@+id/buttonF8"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutG1">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess2"
+                    android:src="@drawable/black_knight"
+                    android:tag="black_knight"
+                    android:id="@+id/buttonG8"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess1"
+                android:id="@+id/verticalLayoutH1">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess1"
+                    android:src="@drawable/black_rook"
+                    android:tag="black_rook"
+                    android:id="@+id/buttonH8"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/horizontalLayout2"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/horizontalLayout1">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess1"
+                android:id="@+id/verticalLayoutA2">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess1"
+                    android:src="@drawable/black_pawn"
+                    android:tag="black_pawn"
+                    android:id="@+id/buttonA7"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutB2">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess2"
+                    android:src="@drawable/black_pawn"
+                    android:tag="black_pawn"
+                    android:id="@+id/buttonB7"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess1"
+                android:id="@+id/verticalLayoutC2">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess1"
+                    android:src="@drawable/black_pawn"
+                    android:tag="black_pawn"
+                    android:id="@+id/buttonC7"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutD2">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess2"
+                    android:src="@drawable/black_pawn"
+                    android:tag="black_pawn"
+                    android:id="@+id/buttonD7"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:background="@color/chess1"
+                android:layout_height="wrap_content"
+                android:id="@+id/verticalLayoutE2">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess1"
+                    android:src="@drawable/black_pawn"
+                    android:tag="black_pawn"
+                    android:id="@+id/buttonE7"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutF2">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess2"
+                    android:src="@drawable/black_pawn"
+                    android:tag="black_pawn"
+                    android:id="@+id/buttonF7"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess1"
+                android:id="@+id/verticalLayoutG2">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess1"
+                    android:src="@drawable/black_pawn"
+                    android:tag="black_pawn"
+                    android:id="@+id/buttonG7"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutH2">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess2"
+                    android:src="@drawable/black_pawn"
+                    android:tag="black_pawn"
+                    android:id="@+id/buttonH7"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/horizontalLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/horizontalLayout2">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutA3">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess2"
+                    android:id="@+id/buttonA6"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:background="@color/chess1"
+                android:layout_height="wrap_content"
+                android:id="@+id/verticalLayoutB3">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess1"
+                    android:id="@+id/buttonB6"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutC3">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess2"
+                    android:id="@+id/buttonC6"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess1"
+                android:id="@+id/verticalLayoutD3">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess1"
+                    android:id="@+id/buttonD6"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutE3">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess2"
+                    android:id="@+id/buttonE6"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess1"
+                android:id="@+id/verticalLayoutF3">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess1"
+                    android:id="@+id/buttonF6"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutG3">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess2"
+                    android:id="@+id/buttonG6"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess1"
+                android:id="@+id/verticalLayoutH3">
+
+            <ImageButton
+                    android:background="@color/chess1"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/buttonH6"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/horizontalLayout4"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/horizontalLayout3">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess1"
+                android:id="@+id/verticalLayoutA4">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess1"
+                    android:id="@+id/buttonA5"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutB4">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess2"
+                    android:id="@+id/buttonB5"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess1"
+                android:id="@+id/verticalLayoutC4">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess1"
+                    android:id="@+id/buttonC5"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutD4">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess2"
+                    android:id="@+id/buttonD5"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess1"
+                android:id="@+id/verticalLayoutE4">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess1"
+                    android:id="@+id/buttonE5"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutF4">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess2"
+                    android:id="@+id/buttonF5"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess1"
+                android:id="@+id/verticalLayoutG4">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess1"
+                    android:id="@+id/buttonG5"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutH4">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess2"
+                    android:id="@+id/buttonH5"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/horizontalLayout5"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/horizontalLayout4">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutA5">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess2"
+                    android:id="@+id/buttonA4"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess1"
+                android:id="@+id/verticalLayoutB5">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess1"
+                    android:id="@+id/buttonB4"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutC5">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess2"
+                    android:id="@+id/buttonC4"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess1"
+                android:id="@+id/verticalLayoutD5">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess1"
+                    android:id="@+id/buttonD4"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutE5">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess2"
+                    android:id="@+id/buttonE4"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess1"
+                android:id="@+id/verticalLayoutF5">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess1"
+                    android:id="@+id/buttonF4"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutG5">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess2"
+                    android:id="@+id/buttonG4"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess1"
+                android:id="@+id/verticalLayoutH5">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess1"
+                    android:id="@+id/buttonH4"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/horizontalLayout6"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/horizontalLayout5">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess1"
+                android:id="@+id/verticalLayoutA6">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess1"
+                    android:id="@+id/buttonA3"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutB6">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess2"
+                    android:id="@+id/buttonB3"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess1"
+                android:id="@+id/verticalLayoutC6">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess1"
+                    android:id="@+id/buttonC3"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutD6">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess2"
+                    android:id="@+id/buttonD3"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess1"
+                android:id="@+id/verticalLayoutE6">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess1"
+                    android:id="@+id/buttonE3"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutF6">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess2"
+                    android:id="@+id/buttonF3"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess1"
+                android:id="@+id/verticalLayoutG6">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess1"
+                    android:id="@+id/buttonG3"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutH6">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess2"
+                    android:id="@+id/buttonH3"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/horizontalLayout7"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/horizontalLayout6">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutA7">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess2"
+                    android:src="@drawable/white_pawn"
+                    android:tag="white_pawn"
+                    android:id="@+id/buttonA2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess1"
+                android:id="@+id/verticalLayoutB7">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess1"
+                    android:src="@drawable/white_pawn"
+                    android:tag="white_pawn"
+                    android:id="@+id/buttonB2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutC7">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess2"
+                    android:src="@drawable/white_pawn"
+                    android:tag="white_pawn"
+                    android:id="@+id/buttonC2"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess1"
+                android:id="@+id/verticalLayoutD7">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess1"
+                    android:src="@drawable/white_pawn"
+                    android:tag="white_pawn"
+                    android:id="@+id/buttonD2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutE7">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess2"
+                    android:src="@drawable/white_pawn"
+                    android:tag="white_pawn"
+                    android:id="@+id/buttonE2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess1"
+                android:id="@+id/verticalLayoutF7">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess1"
+                    android:src="@drawable/white_pawn"
+                    android:tag="white_pawn"
+                    android:id="@+id/buttonF2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutG7">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess2"
+                    android:src="@drawable/white_pawn"
+                    android:tag="white_pawn"
+                    android:id="@+id/buttonG2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess1"
+                android:id="@+id/verticalLayoutH7">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess1"
+                    android:src="@drawable/white_pawn"
+                    android:tag="white_pawn"
+                    android:id="@+id/buttonH2"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/horizontalLayout8"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/horizontalLayout7">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess1"
+                android:id="@+id/verticalLayoutA8">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess1"
+                    android:src="@drawable/white_rook"
+                    android:tag="white_rook"
+                    android:id="@+id/buttonA1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutB8">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess2"
+                    android:src="@drawable/white_knight"
+                    android:tag="white_knight"
+                    android:id="@+id/buttonB1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess1"
+                android:id="@+id/verticalLayoutC8">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess1"
+                    android:src="@drawable/white_bishop"
+                    android:tag="white_bishop"
+                    android:id="@+id/buttonC1"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutD8">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess2"
+                    android:src="@drawable/white_queen"
+                    android:tag="white_queen"
+                    android:id="@+id/buttonD1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess1"
+                android:id="@+id/verticalLayoutE8">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess1"
+                    android:src="@drawable/white_king"
+                    android:tag="white_king"
+                    android:id="@+id/buttonE1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutF8">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess2"
+                    android:src="@drawable/white_bishop"
+                    android:tag="white_bishop"
+                    android:id="@+id/buttonF1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess1"
+                android:id="@+id/verticalLayoutG8">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess1"
+                    android:src="@drawable/white_knight"
+                    android:tag="white_knight"
+                    android:id="@+id/buttonG1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/chess2"
+                android:id="@+id/verticalLayoutH8">
+
+            <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/chess2"
+                    android:src="@drawable/white_rook"
+                    android:tag="white_rook"
+                    android:id="@+id/buttonH1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
